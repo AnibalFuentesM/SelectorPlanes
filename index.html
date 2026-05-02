@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Comparador de Planes | In Motion</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">In Motion Dance Academy</p>
+        <h1>Comparador de planes</h1>
+        <p class="intro">Selecciona las clases que quieres tomar y compara las mensualidades con parqueo estimado.</p>
+      </div>
+      <div class="fee-box" aria-label="Cargos separados">
+        <span>Registration: <strong>Q150</strong></span>
+        <span>Membership anual: <strong>Q125</strong></span>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="schedule-panel" aria-labelledby="schedule-title">
+        <div class="panel-heading">
+          <div>
+            <h2 id="schedule-title">Horarios de clase</h2>
+            <p>Haz clic en cada casilla para armar tu selección.</p>
+          </div>
+          <div class="actions">
+            <button id="select-all" type="button">Seleccionar todo</button>
+            <button id="clear-selection" type="button" class="secondary">Limpiar</button>
+          </div>
+        </div>
+
+        <div class="poster-shell">
+          <div id="schedule" class="schedule-poster" aria-live="polite"></div>
+          <div class="poster-footer" aria-label="Precios de planes">
+            <div>
+              <strong>Mensualidad</strong>
+              <span>Dancer Pass Q395</span>
+              <span>Night Pass Q595</span>
+              <span>Weekend Pass Q300</span>
+              <span>Teens In Motion Q495</span>
+              <span>Full In Motion Q750</span>
+            </div>
+            <div>
+              <strong>Información</strong>
+              <span>Registration Q150</span>
+              <span>Membership Q125</span>
+              <span>Full In Motion incluye todos los horarios y parqueo hasta 3 horas.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="summary-panel" aria-labelledby="summary-title">
+        <div class="summary-sticky">
+          <h2 id="summary-title">Opciones</h2>
+          <div id="selection-summary" class="selection-summary"></div>
+          <div id="recommendations" class="recommendations"></div>
+        </div>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
